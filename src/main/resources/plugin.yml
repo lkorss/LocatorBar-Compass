@@ -1,0 +1,21 @@
+name: LocatorBarCompass
+version: '1.0.0'
+main: ru.mcplugins.locatorbarcompass.LocatorBarCompass
+api-version: '1.21'
+author: YourName
+description: Locator Bar (1.21.6+) работает у игрока только если в руке или оффхенде компас.
+
+commands:
+  locatorbarcompass:
+    description: Управление плагином LocatorBarCompass
+    aliases: [lbc]
+    permission: locatorbar.admin
+    usage: /<command> <reload|toggle|status>
+
+permissions:
+  locatorbar.admin:
+    description: Доступ к командам управления плагином
+    default: op
+  locatorbar.bypass:
+    description: Locator Bar у игрока работает по-ванильному (компас не требуется)
+    default: false
